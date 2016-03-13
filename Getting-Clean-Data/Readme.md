@@ -8,18 +8,8 @@ output: html_document
 The tidy data in tidy.txt can be read into R with the following code:
 
 
-```r
 read.table("tidy.txt", header=TRUE, colClasses=c('factor', 'factor', rep('numeric', 66)))
-```
 
-```
-## Warning in file(file, "rt"): cannot open file 'tidy.txt': No such file or
-## directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
-```
 
 ## Overview 
 
