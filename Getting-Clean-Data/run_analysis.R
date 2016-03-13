@@ -1,3 +1,5 @@
+## Loading Data
+
 if(!file.exists("./data")){dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl,destfile="./data/Dataset.zip",method="curl")
@@ -66,18 +68,6 @@ FullData_Selected$activity[FullData_Selected$activity == i] <- as.character(Acti
 }
 
 str(FullData_Selected$activity)
-
-# Another way to do it
-# FullData_Selected$activity <- as.character(FullData_Selected$activity )
-# FullData_Selected$activity[FullData_Selected$activity  == 1] <- "Walking"
-# FullData_Selected$activity[FullData_Selected$activity  == 2] <- "Walking Upstairs"
-# FullData_Selected$activity[FullData_Selected$activity  == 3] <- "Walking Downstairs"
-# FullData_Selected$activity[FullData_Selected$activity == 4] <- "Sitting"
-# FullData_Selected$activity[FullData_Selected$activity  == 5] <- "Standing"
-# FullData_Selected$activity[FullData_Selected$activity  == 6] <- "Laying"
-# FullData_Selected$activity <- as.factor(FullData_Selected$activity)
-
-
 
 ## Appropriately labels the data set with descriptive variable names
 
